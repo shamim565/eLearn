@@ -254,7 +254,7 @@
         <!-- courses section end -->
 
         <!-- explore section start  -->
-        <section class="container pt-5 mb-5 pb-lg-5">
+        <section class="pt-5 mb-5 pb-lg-5">
             <div class="card" style="border: 0;">
                 <div class="row g-0 ">
                     <div class="col-md-5">
@@ -293,17 +293,225 @@
         <!-- explore section end  -->
 
         <!-- register start  -->
-        <section class="container bg-info d-flex align-items-center p-5 mb-5">
+        <section class="bg-info d-flex align-items-center p-5 mb-5 rounded">
             <div class="w-50 ">
                 <h2>Ready to join?</h2>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                     looking at its layout.</p>
             </div>
             <div class="w-50 text-end">
-                <button class="btn bg-light">Register Now</button>
+                <button type="button" class="btn btn-light text-info fw-semibold" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register Now</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">User Registration</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-start">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="user-name" class="col-form-label">Name:</label>
+                                        <input type="text" class="form-control" id="user-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="user-name" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="user-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="col-form-label">Password:</label>
+                                        <input type="password" class="form-control" id="password"></input>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-start">
+                                <button type="button" class="btn btn-primary px-4 fw-semibold">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <!-- register end -->
+
+        <!-- successful students start  -->
+        <section class="my-5">
+            <div>
+                <h2 class="fw-bolder">Meet Our Successfull Students</h2>
+                <p class="w-50">It is a long established fact that a reader will be distracted by the readable content
+                    of a page when
+                    looking at its layout.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body p-3">
+                            <h5 class="card-title">Awlad Hossain</h5>
+                            <p class="card-text">UI-UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-2.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body p-3">
+                            <h5 class="card-title">Jannatul Islam</h5>
+                            <p class="card-text">Motion Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-3.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body p-3">
+                            <h5 class="card-title">Imran Hossain</h5>
+                            <p class="card-text">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-4.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body p-3">
+                            <h5 class="card-title">Nishi Akter</h5>
+                            <p class="card-text">Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- successful students end  -->
+
+        <!-- student feedback start  -->
+        <!-- <section>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+
+
+                        <div class="d-flex">
+                            <img src="images/student/student-5.png" class="card-img-start" alt="...">
+                            <div class="card-body p-3">
+                                <h5 class="card-title">Awlad Hossain</h5>
+                                <p class="card-text">UI-UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- student feedback end  -->
+
+        <!-- asked questions start  -->
+        <section>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="text-center w-50">
+                    <h2 class="fw-bolder">Frequently Asked Questions</h2>
+                    <p class="">It is a long established fact that a reader will be distracted by the readable content
+                        of a page when
+                        looking at its layout.</p>
+                </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are the difference between Flex and Grid?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was
+                            designed for layout in one dimension - either a row or a column. Grid was designed for
+                            two-dimensional layout - rows, and columns at the same time. The two specifications share
+                            some common features.The approach of CSS Grid is the layout first, while the Flexbox
+                            approach is primarily the content.The Flexbox layout is best suited to application
+                            components and small-scale layouts, while the Grid layout is designed for larger-scale
+                            layouts that are not linear in design.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Does my site need to be updated to HTTPS instead of HTTP?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Yes!</strong> <br>
+                            In 2022, there is no reason – no good excuse – not to upgrade any site to HTTPS by acquiring
+                            an SSL certificate. From August 2018, the most popular web browser on the planet,
+                            Google Chrome, is giving a big red warning to your visitors if your site is not fully
+                            secure. Firefox is already doing this, and Microsoft’s Edge and Apple’s Safari are sure to
+                            follow. So make sure you get an SSL certificate and keep it up to date. This will protect
+                            your content from being covertly altered and prevent your customers’ information from being
+                            monitored or stolen.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is a web server?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The term "web server" can refer to the hardware or software that serves websites to clients
+                            across the web — or both of them working together. In this article we go over how web
+                            servers work, and why they're important.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Are a web developer and a web designer the same thing?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Not exactly. Here’s how it breaks down: <br>
+
+                            A <strong>web developer</strong> is more concerned with functionality and features of a
+                            website, and versed
+                            in the programming languages required to create them. Web developers will still need to
+                            understand the aesthetics and art direction of the site as they implement features. <br><br>
+
+                            A <strong>web designer</strong> will create the logos, graphics, and layout that determine
+                            the look and feel
+                            of a website. Web designers will use software like Adobe Photoshop and Illustrator to create
+                            these materials. A web designer with a knowledge of code can help him/her better communicate
+                            with the web developer. <br>
+
+                            A <strong>developer</strong> with skills in both development and design is extremely
+                            valuable, and could make
+                            for a great PM (project manager) on any web project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- asked questions end  -->
+
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
